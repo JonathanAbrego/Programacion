@@ -1,0 +1,153 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\begin{document}
+\title{Diseño de la solucion al problema de la calculadora}
+\author{Abrego Alvarez Jonathan}
+\date{13 de septiembre de 2011}
+\maketitle
+   \section{Identificacion de objetos principales}
+  Los sustantivo encontrados en la descripcion del problema son: programa, operaciones, suma, resta, multiplicacion, raiz cuadrada, potencia, resultado,usuario,valores y constantes.\\
+   Analizando los sustantivos se puede decir que “usuario” el aquel que va hacer uso del programa, por lo general este no se traduce en clase, al igual que el sustantivo “programa”.\\
+  Pero por el contrario tenemos los sustantivos como operaciones, resta, multiplicacion,raiz cuadrada, potencia,que pueden definirse como clases.\\
+   Por ultimo podemos decir que valores, contantes, resultado pueden ser atributos dentro de alguna clase.
+   \section{Encontrar el comportamiento deseado}
+      \begin{enumerate}
+         \item Elegir opcion. 
+         \item Solicitar los valores.
+         \item Verificar que sean correctos.
+         \item Guardar resultado si asi lo desea.
+         \item Usar los resultados. 
+         \item Insertar constantes.
+         \item Salir del programa. 
+      \end{enumerate}
+   \section{Definir escenarios}
+   El programa muestra una lista con las opciones a elegir, solicitando que introduzca la opcion deseada.
+   \begin{enumerate}
+   \item Suma
+   \item Resta
+   \item Multiplicacion
+   \item Raiz 
+   \item Division
+   \item Potencia de un numero
+   \end{enumerate}
+
+   \begin{enumerate}
+    \item ESCENARIO:Suma.\\
+    El usuario intorduce 1 y da Enter.\\
+    El programa solicita que introduzca 2 numeros.\\
+    El usuario introduce el primer numero y da enter.\\
+    El usuario introduce el segundo numero y da enter.\\
+    El programa realiza la operacion y muestra el resultado.\\
+     \item ESCENARIO:Resta.\\
+    El usuario intorduce 2 y da Enter.\\
+    El programa solicita que introduzca 2 numeros.\\
+    El usuario introduce el primer numero y da enter.\\
+    El usuario introduce el segundo numero y da enter.\\
+    El programa realiza la operacion y muestra el resultado.\\
+    \item ESCENARIO:Multiplicacion.\\
+    El usuario intorduce 3 y da Enter.\\
+    El programa solicita que introduzca 2 numeros.\\
+    El usuario introduce el primer numero y da enter.\\
+    El usuario introduce el segundo numero y da enter.\\
+    El programa realiza la operacion y muestra el resultado.\\
+    \item ESCENARIO:Raiz Cuadrada.\\
+    El usuario intorduce 4 y da Enter.\\
+    El programa solicita que introduzca un numero.\\
+    El usuario introduce el numero y da enter.\\
+    El programa verifica que el valor sea correcto, es decir mayor que cero.\\
+    En caso de estar mal pide ingresar el valor nuevamente.\\
+    El programa realiza la operacion y muestra el resultado .\\
+    \item ESCENARIO:Division.\\
+    El usuario intorduce 5 y da Enter.\\
+    El programa solicita que introduzca 2 numeros.\\
+    El programa indica que el primer valor sera tomado como el numerador y el segundo como denominador.\\
+    El usuario introduce el primer numero y da enter.\\
+    El usuario introduce el segundo numero y da enter.\\
+    Verifica que el segundo valor sea correcto, es decir distinto de cero.\\
+    En caso de ser asi pide que vuelva ingresar el numero.\\
+    El programa realiza la operacion y muestra el resultado.\\
+    \item ESCENARIO:Potencia.\\
+    El usuario intorduce 6 y da Enter.\\
+    El programa solicita que introduzca 2 numeros.\\
+    Donde el primer valor sera el numero a elevar a una potencia, y el segundo valor determina la potencia elvada.\\
+    El usuario introduce el primer numero y da enter.\\
+    El usuario introduce el segundo numero y da enter.\\
+    El programa realiza la operacion y muestra el resultado.\\
+\end{enumerate}
+
+\section{Actividad 3}
+\begin{enumerate}
+\item (5 + 2) - (3 - 2) * (5 + 3).\\ 
+Ejecutamos el programa.\\
+Seleccionamos la opcion 1 de suma.\\
+Ingresamos los valores solicitados, 5 y 3.\\
+El programa regresara 8.\\
+Este resultado lo guardamos en la memoria1.\\
+Ahora volvemos a selecionar la opcion de resta.\\
+Ingremsamos los valores solicitados,3 y 2.\\
+El programa regresara 1.\\
+Este resultado lo guardamos en memoria2.\\
+Despues seleccionamos la opcion de multiplicar.\\
+Extraemos los valores de memoria 1 y 2, teniendo 8 y 1.\\
+El programa nos regresa 8.\\
+Como ya teniamos un 8 en la memoria1 no es necesario volver a guardarlo.\\
+Ahora pedimos ejecutar la opcion de suma.\\
+Ingresamos los valores solicitados, 5 y 2.\\
+Indicamos que este resultado remplace lo que tenia en la memoria2.\\
+Por ultimo seleccionamos la opcion de resta.\\
+Indico al programa que quiero el valor de la memoria 2.\\
+Y despues el de la memoria 1.\\
+Dando como resultado -1.\\
+
+\item(x^2+2*x-2)~con~x = 10.
+  
+Ejecutamos el programa.\\
+Selecionamos la opcion de potencia.\\
+Ingresamos los valores, x=10 elevado a la 2.\\
+El programa nos regresara 100.\\
+Este valor lo guardamos en la memoria1.\\
+Luego seleccionamos la opcion de multiplicar.\\
+Ingresamos los valores solicitados, x=10 y 2.\\
+El programa nos regresara 20.\\
+Guardamos el resultado en la memoria2.\\
+Despues seleccionamos la opcion de suma.\\
+Pedimos al programa que queremos usar los valores de momiria1 y memoria2, para sumarlos.\\
+El prgrama nos regresara 120.\\
+Guardamos el resultado en memoria1, remplazando el anterior.\\
+Por ultimo seleccionamos la opcion de resta.\\
+Ingresamos los valores requeridos,pidiendo utilizar la memoria1 y 2.\\
+Dando por resultado 118.\\
+  
+\item( \pi * x^2)~ con~x = 5.
+  
+Ejecutamos el programa.\\
+Seleccionamos la opcion de potencia.\\
+Ingresamos lo valores requeridos, x=5 elevado a la 2 .\\
+Nos regresara 25.\\
+Dicho valor lo guardamos en la memoria1.\\
+Despues en el menu elegimos la opcion de multiplicar.\\
+Ingresamos lo valores requeridos, \pi 
+
+(que es una contantes) y extraemos el valor guardado en la memoria1 que es 25.\\
+Obteniendo como valor  78.53981635
+
+\item (e * \pi)^5/2.
+  
+Ejecutamos el programa.\\
+Seleccionamos la opcion de multiplicar.\\
+Ingresamos lo valores requeridos, que en este caso son las 2 contantes e y \pi.
+
+Nos regresa  8.53973422234649\\
+Guardamos este valor en la memoria1.\\
+En el menu seleccionamos la opcion de potencia.\\
+Ingresamos el valor a elevar,que en este caso es extraer el valor guardado en la memora1= 8.53973422234649 y lo elevamos a la 5.\\
+El programa nos regresara  45417.348157860775.\\
+Guardamos este nuemro en la memoria2.\\
+Ahora en el menu seleccionamos dividir.\\
+Ingresamos los valores,pidiendo el valor que se haya en la memoria2 que es 45417.348157860775 y 2 que es el divisor.\\
+Obteniendo como resultado 22708.674078930388
+      
+\end{enumerate}
+\end{document}

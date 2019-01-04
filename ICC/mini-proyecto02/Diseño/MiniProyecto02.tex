@@ -1,0 +1,95 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\title{\textbf{Mini-Proyecto 02}}
+\author{Abrego Alvarez Jonathan \\ Martínez Anaya Luis Angel}
+
+\begin{document}
+
+\maketitle{\textbf{\large Mini-Proyecto 02: Diseño del programa}\\}
+
+\textbf{Paso 1: Descubrir las clases necesarias para la solución del problema \\}
+\begin{itemize}
+\item Pokemon
+\item Pokebola
+\item Entrenador
+\item Batalla
+\item Ataque
+\begin{itemize}
+\item Ataque Normal
+\item Ataque Continuo
+\item Ataque Paralizador
+\item Ataque Somnífero
+\end{itemize}
+\end{itemize}
+
+\textbf{Paso 2: Determinar las responsabilidades de cada clase para la solución del problema}
+\begin{itemize}
+\item Pokemon: 
+
+\begin{itemize}
+\item Hay pokemones de varios tipos, cada uno tienen un tipo, se clasifican según su clase o especie, tienen un género, nivel y sus nombres de ataques son distintos
+\item Un entrenador puede llamar a sus Pokemones como quiera, es decir, ponerles un apodo, de tal manera que puedan ser diferenciados en caso de que el entrenador tenga varios Pokemones de la misma especie.
+\item Un Pokemon puede atacar a otro
+\end{itemize}
+
+\item Pokebola:
+
+\begin{itemize}
+\item Almacenar sólo un Pokemon dentro de ella
+\item Permitir saber si está ocupada por otro Pokemon
+\item Liberar al Pokemon que tiene contenido
+\end{itemize}
+
+\item Entrenador:
+\begin{itemize}
+\item Poseer seis pokemones contenidos en pokebolas en un cinturón
+\item Tener un nombre, apellido, género, debe provenir de un lugar y pertenece a un equipo
+\item Hacer que una pokebola libere al Pokemon que tiene contenido, así como hacer que el Pokemon vuelva a ocupar su pokebola
+\item Conocer la información de los Pokemones que tiene en su cinturón
+\item Participar en una batalla Pokemon
+\end{itemize}
+
+\item Batalla:
+\begin{itemize}
+\item Permitir que dos entrenadores liberen a un Pokemon
+\item Pedir a un entrenador que ejecute una orden hacia su Pokemon liberado para atacar al del contrario
+\item Hacer saber al entrenador que su Pokemon en batalla sigue sufriendo las consecuencias de un ataque especial hecho por el Pokemon del contrario
+\item Determinar cuándo hay un ganador en la batalla, de lo contrario ésta debe continuar, cada entrenador con su turno
+\end{itemize}
+
+\item Ataque:
+\begin{itemize}
+\item Permitir que un pokemon pueda ejercer un ataque contra otro durante una batalla
+\item Poder subir de nivel, con el fin de causar más daño al enemigo
+\item Dependiendo del tipo de Pokemon sobre el cual se ejerce el ataque, si la clase del Pokemon es más vulnerable, el daño va a ser mayor que con cualquier otro Pokemon de distinta clase
+\item Hacer una pequeña descripción del ataque que está realizando un Pokemon sobre otro
+\item Dependiendo del nivel del Pokemon, la cantidad de daño que puede causar varía
+\begin{itemize}
+\item \textbf{Ataque Normal:}
+\item Causar un daño estándar al Pokemon
+\item \textbf{Ataque Continuo:}
+\item Aparte del daño estándar al Pokemon, causar un daño extra por cada turno, cierto número de turnos
+\item \textbf{Ataque Somnífero:}
+\item Inhabilitar al Pokemon contrario de atacar, cierto número de turnos, con el fin de agarrar ventaja en la batalla
+\item \textbf{Ataque Paralizador:}
+\item Incapacitar al Pokemon liberado del entrenador contrario de poder realizar un ataque por cierto tiempo, mientras que el Pokemon contrario sí es capaz de seguirlo atacando.
+\end{itemize}
+
+\end{itemize}
+
+\end{itemize}
+
+\textbf{\\Paso 3: Determinar la colaboración entre las clases (Escenario)}
+\begin{itemize}
+\item Dar la bienvenida a dos usuarios que pretendan ser entrenadores Pokemon, y solicitarles datos
+\item Pedirle a cada uno de los entrenadores que escojan los Pokemones que quieran tener en las seis pokebolas de su cinturón, escogerles un apodo a cada Pokemon que escojan
+\item Una vez escogidos los Pokemones, desplegar un menú donde pueden saber información acerca de su registro como entrenadores, así como información de sus Pokemones, así como de proceder a la pelea
+\item Pedir a cada uno de los entrenadores que liberen a uno de sus Pokemones para empezar la batalla
+\item Pedirle a un entrenador que ordene a su Pokemon que realize cierto ataque sobre el Pokemon del entrenador contrario
+\item Si en el ataque los puntos de vida del Pokemon contrario se acabaron, pedirle al segundo entrenador que libere a otro Pokemon de su cinturón para seguir con la batalla, si ya no tiene Pokemones disponibles, el segundo entrenador habrá perdido, de lo contrario, es turno de que ataque.
+\end{itemize}
+\end{document}
