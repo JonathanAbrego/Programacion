@@ -1,0 +1,7 @@
+**USADO PARA LAS PRACTICAS** 
+
+GHCi
+
+SWI Prolog
+
+COQ
