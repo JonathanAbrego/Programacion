@@ -1,0 +1,10 @@
+Abrego Alvarez Jonathan		
+308043305
+
+Despues de realizar el ant test y que se genere el "proyecto02.jar" debe
+correr el proyecto de la siguiente manera desde terminal
+java -cp lib/sqlite-jdbc-3.8.5-pre1.jar:proyecto02.jar proyecto02.Proyecto02 
+
+Tener en cuenta el uso de 
+SQLite
+Java
