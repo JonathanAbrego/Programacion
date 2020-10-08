@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/09/2020, 04:17:16 PM
+    Author     : Jonathan
+*/
+
+.navbar{
+    position: absolute;
+    background: transparent !important;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255,255,255,0.3);    
+}
+
+.nav-link{
+    color: #7a7a85!important;
+    margin-right: 5px;    
+}
+.nav-link:hover{
+    color: rgba(70,106,788,1.0) !important;
+}
+
+.news, .singup, .user, .glass, .pet{
+    margin: 5px;
+}
+
+.news, .glass, .pet{
+    color: #03A9F4;
+}
+
+.book{
+    color: #E91E63;
+}
+
+.user{
+    color: #005fcc;
+}
+
+#login{
+    border: 2px solid #005fcc;
+    border-radius: 20px;
+    padding: 0.2rem 1rem!important;
+    line-height: 30px;
+}
+
+#login:hover{
+    background-color : #f2f2f2!important;
+    border: 2px solid #f2f2f2;
+}
+
+#singup{
+    border: 2px solid #E91E63;
+    border-radius: 20px;
+    padding: 0.2rem 1rem!important;
+    line-height: 30px;
+}
+
+#singup:hover{
+    background-color: #f2f2f2!important;
+    border: 2px solid #f2f2f2;    
+}
+
+
+.offcanvas-header{
+    display: none;
+}
