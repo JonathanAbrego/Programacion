@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[spanish]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\author{Martínez Anaya Luis Angel}
+
+\begin{document}
+
+\begin{center}
+  Abrego Alvarez Jonathan \\
+  Martínez Anaya Luis Angel \\
+  \textbf{Diseño de la solución del problema planteado en la actividad 2 de la práctica 7}
+\end{center}
+
+Se necesita crear una clase Polinomio que sea capaz de contruir un polinomio apartir de un arreglo de coeficientes, siendo el grado el número de elementos en el arreglo menos uno. Esta clase debe contener métodos para sumar dos polinomios, evaluarlo en un número real dado, multiplicar por un escalar a todos los coeficientes, conocer su grado e imprimirlo en pantalla de una manera adecuada.  \\
+
+\textbf{PASO 1: IDENTIFICACION DE OBJETOS} \\
+
+\begin{itemize}
+  
+\item Polinomio
+\item Coeficientes
+\item Grado
+\item Exponentes
+  
+\end{itemize}
+
+\textbf{PASO 2: IDENTIFICAR LAS ACCIONES DEL OBJETO}
+
+\begin{itemize}
+
+\item Para Polinomio: tiene que poder sumarse con otro polinomio, imprimirse en pantalla, multiplicarse por un factor, y evaluarse
+\item Para Coeficientes: deben poder ser multiplicados, sumarse en caso de que su polinomio en suma con otro tengan el mismo exponente y deben poder multiplicarse por un factor dentro de un polinomio
+\item Para Grado: puede hacerse conocer el grado de un polinomio
+\item Para Exponentes: determinar el grado de un polinomio, asi como poder evaluarse en un polinomio
+  
+\end{itemize}
+
+\textbf{PASO 3: DEFINICIÓN DEL ESCENARIO}
+
+\begin{itemize}
+  
+\item El programa creara un polinomio a partir de un arreglo con una longitud determinada, los coeficientes del polinomio se darán aleatoriamente
+\item El programa muestra el polinomio en pantalla
+\item Dependiendo de los métodos que se escriba en el método principal, el programa ejecutará acciones sobre el polinomio cumpliendo las exigencias del usuario, dentro de lo posible
+  
+\end{itemize}
+
+\end{document}
